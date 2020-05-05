@@ -90,7 +90,7 @@ $("#play").click(function() {
 
   function updateWallet() {
     n = v.currentTime;
-    if (n >= 831 && n <= 1302) {
+    if (n >= 528 && n <= 780) {
 
       $("#approve").click(function(){
         v.removeEventListener('timeupdate', update);
