@@ -294,3 +294,15 @@ input:checked + .slider:before {
   font-size:12px;
   border-radius:100px;
 }
+
+@media not all and (min-resolution:.001dpcm) { 
+  @media {
+    #balanceDue {
+      position: absolute;
+      z-index: 1;
+      top: 92.5%;
+      left: 310px;
+      float: left;
+  }
+  }
+}
