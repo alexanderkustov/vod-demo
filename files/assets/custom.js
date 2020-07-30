@@ -8,7 +8,6 @@ let isPaused = v.paused;
 let n;
 
 
-
 $(v).hover(function(){
   $(".paymentDue").show(); 
 });
@@ -59,7 +58,7 @@ $("#play").click(function() {
       $("#fee").css({"display": "block", "animation": "spin 0.5s linear"});
       $("#success").css({"display": "block", "animation": "spin 0.5s linear"});
       $("#axate-wallet").hide();
-      v.currentTime = 790;
+      v.currentTime = 7;
       $("#balanceDue").remove();
       v.play();
       setTimeout(() => { 
@@ -90,7 +89,8 @@ $("#play").click(function() {
 
   function updateWallet() {
     n = v.currentTime;
-    if (n >= 528 && n <= 780) {
+    console.log(n);
+    if (n >= 3 && n <= 5) {
 
       $("#approve").click(function(){
         v.removeEventListener('timeupdate', update);
