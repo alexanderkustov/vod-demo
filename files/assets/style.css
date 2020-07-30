@@ -306,3 +306,7 @@ input:checked + .slider:before {
   }
   }
 }
+
+.stage__player.is-hoverable{
+  background: url('https://source.unsplash.com/random/800x600');
+}
