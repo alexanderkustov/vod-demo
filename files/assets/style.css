@@ -63,12 +63,11 @@ html, body {
     z-index: 5;
 }
 
-
 #balanceDue {
   position: absolute;
   z-index: 1;
   top: 92.5%;
-  left: 258px;
+  left: 170px;
   float: left;
 }
 #walletOpen {
@@ -308,5 +307,6 @@ input:checked + .slider:before {
 }
 
 .stage__player.is-hoverable{
-  background: url('https://source.unsplash.com/random/800x600');
+  background: url('covervideo.jpg');
+  background-size: cover;
 }

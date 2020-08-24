@@ -13,7 +13,7 @@ $(v).hover(function(){
 });
 
 $(v).mouseleave(function(){
-  $(".paymentDue").hide(); 
+  // $(".paymentDue").hide(); 
 });
 
 $("#play").click(function() {
@@ -31,7 +31,7 @@ $("#play").click(function() {
         $("#fee").css({"display": "block", "animation": "spin 0.5s linear"});
         $("#success").css({"display": "block", "animation": "spin 0.5s linear"});
         $("#axate-wallet").hide();
-        v.currentTime = 790;
+        v.currentTime = 272;
         $("#balanceDue").hide();
         setTimeout(() => { 
           $("#fee").hide(100);
@@ -58,9 +58,12 @@ $("#play").click(function() {
       $("#fee").css({"display": "block", "animation": "spin 0.5s linear"});
       $("#success").css({"display": "block", "animation": "spin 0.5s linear"});
       $("#axate-wallet").hide();
-      v.currentTime = 7;
-      $("#balanceDue").remove();
+
+      v.currentTime = 272;
+      console.log("HSIT");
+      // $("#balanceDue").remove();
       v.play();
+
       setTimeout(() => { 
         $("#fee").hide(100);
         $("#axate").css({"display": "block", "animation": "spin 0.5s linear"});
@@ -90,7 +93,7 @@ $("#play").click(function() {
   function updateWallet() {
     n = v.currentTime;
     console.log(n);
-    if (n >= 3 && n <= 5) {
+    if (n >= 110 && n <= 269) {
 
       $("#approve").click(function(){
         v.removeEventListener('timeupdate', update);
@@ -98,7 +101,7 @@ $("#play").click(function() {
         v.removeEventListener('onseeking', update);
         walletCharge();
         v.play();
-        $("#balanceDue").remove();
+        // $("#balanceDue").remove();
         $("#wallet").animate({
           width: "0px"
         });
