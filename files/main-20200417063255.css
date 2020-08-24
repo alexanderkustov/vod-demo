@@ -2401,7 +2401,7 @@ a:disabled,
 }
 
 .icon--itv-colour-picked-neg:before {
-    content: url("https://static1.squarespace.com/static/5aa687df5417fc573375cfe8/t/5ced1cf7971a18139a56e23e/1595938196340/?format=25w");
+    /* content: url("https://static1.squarespace.com/static/5aa687df5417fc573375cfe8/t/5ced1cf7971a18139a56e23e/1595938196340/?format=25w"); */
 }
 
 .icon--itv-colour-picked-neg.icon--baseline:before {
